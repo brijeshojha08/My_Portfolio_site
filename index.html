@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Img/logo.PNG">
+    <script src="https://kit.fontawesome.com/8831d6ebcb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="sideMenu">
+                <img src="./Img/logo1.PNG" class="logo" />
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Work</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Brijesh</span><br> Ojha From India</h1>
+            </div>
+        </div>
+    </div>
+    <!--About page-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Img/Ojha.png" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-me">I am a passionate and motivated fresher with a keen interest in web
+                        development⭐✨⭐.<br>
+                        I have learned HTML, CSS & JavaScript, and have also gained proficiency in using Bootstrap to
+                        create responsive and visually appealing websites💥💥.<br>
+                        I am eager to apply my skills and continue growing in the field of web development.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                        <p class="tab-links" onclick="opentab('pls')">Programmings</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2025 - COMPLETED BY SDJ INTERNATIONAL COLLEGE (VESU - SURAT)</span><br> Bachelor
+                                of
+                                Computer Application (BCA) - From VNSG University.</li>
+                            <li><span>2022 - PARK PUBLIC SCHOOL - SACHIN</span><br> 12th Science - Biology
+                                <br>Percentage - 57%
+                            </li>
+                            <li><span>2020 - PARK PUBLIC SCHOOL - SACHIN</span><br> 10th (GSEB - Board) <br>Percentage -
+                                67%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificates">
+                        <ul>
+                            <li><span>BASIC OF VIDEO EDITING</span> - SEPT 2022</li>
+                            <li><span>ENVIRONMENTAL AWARENESS</span> - MARCH 2023</li>
+                            <li><span>FOUNDATION OF IT SUPPORT</span> - SEPT 2023</li>
+                            <li><span>FUNDAMENTAL OF LARAVEL FRAMEWORK</span> - FEB 2024</li>
+                            <li><span>CHATGPT</span> - SEPT 2024</li>
+                            <li><span>GENERATIVE AI</span> - FEB 2025</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="pls">
+                        <ul>
+                            <li><span>HTML</span> - HyperText Markup Language</li>
+                            <li><span>CSS</span> - Cascading Style Sheets</li>
+                            <li><span>JS</span> - JavaScript</li>
+                            <li><span>REACT JS</span> - It's a JavaScript library developed by Facebook</li>
+                            <li><span>PHP</span> - Hypertext Preprocessor</li>
+                            <li><span>SQL</span> - Structured Query Language / Relational Database Management System
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--works-->
+    <div id="works">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Sundown Studio</h2>
+                    <p>1. <br>these are the unique works designed by me using html, css, & js.</p>
+                    <a href="https://brijesh-sundown-studio.netlify.app/" target="_blank">See</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-clone"></i>
+                    <h2>Thapa Eduhub </h2>
+                    <p>2. <br>these are the practice works by me using only using html & css codes.</p>
+                    <a href="https://brijesh-thapa-practice.netlify.app/" target="_blank">See</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bars"></i>
+                    <h2>Responsive Navbar</h2>
+                    <p>3. <br>my first practice of full responsive navbar using html and css.</p>
+                    <a href="https://brijesh-responsive-navbar.netlify.app/" target="_blank">See</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Project-->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="project-list">
+                <div class="project-work">
+                    <img src="./Img/calc.png" />
+                    <div class="layer">
+                        <h3>My Calculator</h3>
+                        <p>My First Javascript Project...!</p>
+                        <a href="https://brijesh-calculator.netlify.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-work">
+                    <img src="./Img/ngg.png" />
+                    <div class="layer">
+                        <h3>Number Guessing Game</h3>
+                        <p>My Second Javascript Project...!</p>
+                        <a href="https://random-number-guessing-game08.netlify.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-work">
+                    <img src="./Img/isfs.png" />
+                    <div class="layer">
+                        <h3>Insta Story Features</h3>
+                        <p>My Third Javascript Project...!</p>
+                        <a href="https://my-insta-story-features.netlify.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title1">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> bo989900@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9714021521, 9173882171</p>
+                    <div class="social-icons">
+                        <a href="https://web.whatsapp.com/send?phone=9714021521"><i class="fa-brands fa-square-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/brijesh-ojha-6a3a7b24a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/brijeshojha08"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="./OJHA BRIJESH.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Brijesh Ojha <i class="fas fa-bolt"></i>. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
