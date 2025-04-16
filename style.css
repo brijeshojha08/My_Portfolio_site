@@ -677,3 +677,15 @@ nav .fa-solid {
         font-size: 14px;
     }
 }
+@media screen and (max-width: 480px) {
+    .about-col-1,.about-col-2{
+        width: 100%;
+    }
+    .about-col-1 img{
+        right: 23px;
+    }
+    .about-col-2 {
+        margin-top: 250px;
+        font-size: 14px;
+    }
+}
