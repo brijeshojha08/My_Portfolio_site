@@ -518,43 +518,49 @@ nav .fa-solid {
 
     nav .fa-solid {
         display: block;
-        font-size: 28px;
+        font-size: 27px;
     }
-    .logo{
+
+    .logo {
         width: 98px;
     }
+
     nav ul {
         background: #ff004f;
         position: fixed;
         top: 0;
         right: -230px;
         width: 200px;
-        height: 600px;
+        height: 450px;
         padding-top: 50px;
-        z-index: 100;
         transition: right 0.5s;
         -webkit-transition: right 0.5s;
         -moz-transition: right 0.5s;
         -ms-transition: right 0.5s;
         -o-transition: right 0.5s;
-        border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        -o-border-radius: 15px;
-}
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }
 
     nav ul li {
-        margin: 25px;
-        font-weight: 600;
-        }
+        margin: 20px;
+        font-weight: 500;
+    }
+
+    nav ul li a {
+        font-size: 22px;
+        left: 45px;
+        top: 30px;
+        text-align: center;
+    }
 
     nav ul .fa-solid {
         position: absolute;
-        top: 25px;
+        top: 28px;
         left: 25px;
         cursor: pointer;
     }
+
 
     .sub-title {
         font-size: 36px;
@@ -577,12 +583,11 @@ nav .fa-solid {
     .about-col-1 img {
         width: 320PX;
         position: absolute;
-        bottom: -250px;
-
+        top: 650px;
     }
 
     .about-col-2 {
-        margin-top: 128px;
+        margin-top: 160px;
         font-size: 14px;
     }
 
@@ -620,16 +625,55 @@ nav .fa-solid {
         font-size: 15px;
         font-weight: 600;
         padding: 12px 28px;
-        
+
     }
-    .contact-left .social-icons  i{
+
+    .contact-left .social-icons i {
         font-size: 26px;
     }
+
     .copyright {
         font-size: 13px;
     }
 
     .sub-title1 {
         font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    nav .fa-solid {
+        display: block;
+        font-size: 27px;
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    nav ul li a {
+        left: 0;
+    }
+
+    nav ul {
+        height: 400px;
+    }
+
+    #header {
+        background-image: url(./Img/01.png);
+        background-size: contain;
+        background-position: right -60px bottom 400px;
+    }
+
+    .about-col-1 {
+        margin-left: -15px;
+    }
+    .about-col-2 {
+        margin-top: 130px;
+        font-size: 14px;
     }
 }
