@@ -640,7 +640,7 @@ nav .fa-solid {
         font-size: 38px;
     }
 }
-
+/* css for small screen */
 @media screen and (max-width: 350px) {
     nav .fa-solid {
         display: block;
